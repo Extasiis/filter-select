@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Buscador</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <a href="#" class="header__logo">
+          <span class="logo__ico"></span>
+          <span> Logo de Carro </span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__navegations">
+            <li><a class="nav__link" href="#">Inicio</a></li>
+            <li><a class="nav__link" href="#">Catalago</a></li>
+            <li><a class="nav__link" href="#">Promociones</a></li>
+            <li><a class="nav__link nav__link-select" href="#">Busqueda</a></li>
+            <li><a class="nav__link" href="">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav__login">
+          <a href="" class="login__signIn">Inicia Sesion</a>
+          <a href="" class="login__signUp">Crea una Cuenta</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="filter__fondo">
+          <form action="" class="filter">
+            <div class="filter__grid">
+              <div class="filter__columns">
+                <select name="" id="marca">
+                  <option value="">Marca</option>
+                  <option value="Audi">Audi</option>
+                  <option value="Chevrolet">Chevrolet</option>
+                  <option value="Lamborgini">Lamborgini</option>
+                  <option value="Mercedes">Mercedes</option>
+                  <option value="Suzuki">Suzuki</option>
+                  <option value="Toyota">Toyota</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="filter__columns">
+                <select name="" id="year">
+                  <option value="">Año</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="filter__columns">
+                <select name="" id="price-min">
+                  <option value="">Precio min</option>
+                  <option value="30000">30000</option>
+                  <option value="40000">40000</option>
+                  <option value="50000">50000</option>
+                  <option value="100000">100000</option>
+                  <option value="150000">150000</option>
+                  <option value="200000">200000</option>
+                  <option value="300000">300000</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="filter__columns">
+                <select name="" id="price-max">
+                  <option value="">Precio Max</option>
+                  <option value="30000">30000</option>
+                  <option value="40000">40000</option>
+                  <option value="50000">50000</option>
+                  <option value="100000">100000</option>
+                  <option value="150000">150000</option>
+                  <option value="200000">200000</option>
+                  <option value="300000">300000</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="filter__columns">
+                <select name="" id="door">
+                  <option value="">Puertas</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="filter__columns">
+                <select name="" id="transmision">
+                  <option value="">Transmisión</option>
+                  <option value="Automatico">Automatico</option>
+                  <option value="sincronico">sincronico</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="filter__columns">
+                <select name="" id="color">
+                  <option value="">Color</option>
+                  <option value="Negro">Negro</option>
+                  <option value="Blanco">Blanco</option>
+                  <option value="Gris">Gris</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Rojo">Rojo</option>
+                  <option value="Naranja">Naranja</option>
+                </select>
+                <span></span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="resultado" class="result"></div>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="js/app.js"></script>
+    <script src="js/autosDB.js"></script>
+  </body>
+</html>

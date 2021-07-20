@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #005aa7, #fffde4) no-repeat;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo__ico {
+  display: flex;
+  background: url(../img/ico-sports-car.svg) center 15px no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 60px;
+}
+
+.nav__navegations {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav__navegations li:hover {
+  transform: scale(0.9);
+}
+
+.nav__link-select {
+  font-weight: bold;
+}
+
+.nav__login a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__login {
+  position: relative;
+}
+
+.nav__login::before {
+  content: "|";
+  position: absolute;
+  left: 42%;
+  top: 0;
+}
+
+.login__signIn {
+  margin: 0 1rem 0 0px;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+.filter__fondo {
+  display: inline-block;
+  background: url("../img/fondo-2.png");
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.filter {
+  display: grid;
+  position: absolute;
+  background: #e0e0e0;
+  box-shadow: inset 6px 6px 12px #808080, inset -6px -6px 12px #ffffff;
+  width: 90%;
+  border-radius: 10px;
+  top: 88%;
+  left: 0;
+  right: 0;
+  bottom: -12%;
+  margin: auto;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.filter__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  column-gap: 20px;
+}
+
+.filter__columns select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(145deg, #2e2e2e, #272727);
+  box-shadow: 5px 5px 3px #111111, -5px -5px 4px #e9e9e9;
+  font-weight: bold;
+  appearance: none;
+}
+
+.filter__columns {
+  position: relative;
+}
+
+.filter__columns span {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  height: 60%;
+  pointer-events: none;
+  background: url("../img/flecha-hacia-abajo.svg") center no-repeat;
+  background-size: contain;
+}
+
+.filter__columns select:focus ~ span {
+  background: url("../img/flecha-hacia-arriba.svg") center no-repeat;
+  background-size: contain;
+}
+
+.filter__columns select option {
+  font-size: 16px;
+  background: #2e2e2e;
+}
+
+.filter__columns select option:nth-child(1) {
+  display: none;
+}
+
+.result {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem;
+  grid-template-rows: 1fr 265px;
+}
+
+.card__header {
+  display: grid;
+  justify-content: center;
+  align-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__image {
+  margin: 0;
+  filter: drop-shadow(5px 5px 3px #111111);
+}
+
+.card__body h4 {
+  margin: 0;
+  color: #e5d600;
+}
+
+.card__body ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 0;
+}
+
+.card__body ul li {
+  margin: 0rem 0rem 0rem 3rem;
+  padding: 0.7rem 0;
+  position: relative;
+}
+
+.card__body ul li::after {
+  content: "";
+  background: url("../img/marca-de-auto.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 0rem;
+}
+
+.card__body ul li:nth-child(2):after {
+  content: "";
+  background: url("../img/modelo.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 0rem;
+}
+
+.card__body ul li:nth-child(3):after {
+  content: "";
+  background: url("../img/puerta.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 0rem;
+}
+
+.card__body ul li:nth-child(4):after {
+  content: "";
+  background: url("../img/seleccion-de-color.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 0rem;
+}
+
+.card__body ul li:nth-child(5):after {
+  content: "";
+  background: url("../img/transmision.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 0rem;
+}
+
+.card__body ul li h5 {
+  margin: 0 0 0 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__body ul li h5::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  height: 80%;
+  pointer-events: none;
+  background: url("../img/flechaBasic-hacia-derecha.svg") center no-repeat;
+  background-size: contain;
+  transition: all 0.3s ease-in;
+}
+
+.card__body ul li h5:hover:before {
+  background: url("../img/flechaBasic-hacia-abajo.svg") center no-repeat;
+  background-size: contain;
+}
+
+.card__body ul li div {
+  overflow: hidden;
+}
+
+.card__body ul li div p {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  text-align: right;
+  border-radius: 2px;
+  margin-top: -40px;
+  transition: all 0.3s;
+  color: rgb(209, 206, 0);
+  font-weight: bold;
+}
+
+.card__body ul li h5:hover ~ div > p {
+  margin-top: 10px;
+}
+
+.card button {
+  padding: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #e5d600, #c1b400);
+  box-shadow: 5px 5px 10px #4d4700, -2px -2px 2px #fff89a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: 40%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card button:hover {
+  transform: scale(0.9);
+}
